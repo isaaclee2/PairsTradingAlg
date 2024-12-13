@@ -39,6 +39,7 @@ plt.show()
 from statsmodels.tsa.stattools import adfuller
 from itertools import combinations
 
+#Finding cointegrated pairs
 stock_pairs = list(combinations(ticks, 2))
 for pair in stock_pairs:
     spread = df[pair[0]] - df[pair[1]]
